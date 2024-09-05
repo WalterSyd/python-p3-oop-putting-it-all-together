@@ -6,7 +6,7 @@ class Book:
         self.title = title
         self.page_count = None
         self.page_count = page_count
-# book1 = Book("And Then There Were None", 272)
+
 
     @property
     def page_count(self):
@@ -15,7 +15,7 @@ class Book:
     @page_count.setter
     def page_count(self, value):
         if not isinstance(value, int):
-             print("page_count must be an integer", end="")
+             print("page_count must be an integer\n", end="")
         else:
             self._page_count = value
 
@@ -24,7 +24,7 @@ class Book:
        # outputs "Flipping the page...wow, you read fast!" when method turn_page() is called'''
        print("Flipping the page...wow, you read fast!")
 
-
+# book1 = Book("And Then There Were None", 272)
 # book1.page_count = "not an integer"
      
 
